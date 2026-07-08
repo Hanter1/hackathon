@@ -1,0 +1,51 @@
+<?php
+/**
+ * Переводы текстов главной страницы (BE / EN) по умолчанию.
+ * Русский — в HOME_DEFAULTS / home_settings. Переопределение — в home_settings_i18n или админке «Главная».
+ */
+return [
+    'be' => [
+        'hero_1' => 'Easy',
+        'hero_2' => 'навучанне для ўвлечаных',
+        'hero_3' => 'People',
+        'count_1_text' => 'першых удзельнікаў',
+        'count_2_text' => 'вучбовых напрамкаў',
+        'count_3_text' => 'актыўных курсаў',
+        'count_4_text' => 'ад першых студэнтаў',
+        'elevate_title_1' => 'Развивайце мяккія навыкі',
+        'elevate_title_2' => 'Вучыцеся і зmaўляйцеся з аднадумцамі ў Easy People',
+        'elevate_btn_text' => 'Пошук курсаў',
+        'elevate_stat_text' => 'Прафесіяналаў',
+        'groups_section_title' => 'Папулярныя курсы',
+        'new_courses_title' => 'Новыя курсы',
+        'news_section_title' => 'Апошнія навіны',
+        'signup_form_title' => 'Запісацца',
+        'signup_form_label_name' => 'Ваша імя',
+        'signup_form_label_email' => 'Email',
+        'signup_form_label_message' => 'Паведамленне або каментарый',
+        'signup_form_btn' => 'Адправіць заявку',
+        'signup_form_success' => 'Дзякуй! Мы звяжамся з вамі.',
+    ],
+    'en' => [
+        'hero_1' => 'Easy',
+        'hero_2' => 'learning for the passionate',
+        'hero_3' => 'People',
+        'count_1_text' => 'first participants',
+        'count_2_text' => 'learning areas',
+        'count_3_text' => 'active courses',
+        'count_4_text' => 'from first students',
+        'elevate_title_1' => 'Grow your soft skills',
+        'elevate_title_2' => 'Learn and connect with like-minded people at Easy People',
+        'elevate_btn_text' => 'Browse courses',
+        'elevate_stat_text' => 'Professionals',
+        'groups_section_title' => 'Popular courses',
+        'new_courses_title' => 'New courses',
+        'news_section_title' => 'Latest news',
+        'signup_form_title' => 'Sign up',
+        'signup_form_label_name' => 'Your name',
+        'signup_form_label_email' => 'Email',
+        'signup_form_label_message' => 'Message or comment',
+        'signup_form_btn' => 'Submit request',
+        'signup_form_success' => 'Thank you! We will contact you soon.',
+    ],
+];

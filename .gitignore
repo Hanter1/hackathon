@@ -43,3 +43,14 @@ Thumbs.db
 
 # Docker volumes (локальные данные)
 db-data/
+
+# База данных и загруженные файлы (PHP CMS)
+/data/
+*.db
+*.sqlite
+
+# Учётные данные деплоя (не коммитить пароли)
+.vscode/sftp.json
+
+# Логи
+error_log

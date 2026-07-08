@@ -1,0 +1,37 @@
+# Единый фронт: главная — index.php, все .html редиректятся на .php
+DirectoryIndex index.php
+
+# Главная
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.html$ / [R=301,L]
+RewriteRule ^home\.html$ / [R=301,L]
+
+# Блог
+RewriteRule ^blog\.html$ /blog.php [R=301,L]
+RewriteRule ^blog-page\.html$ /blog.php [R=301,L]
+
+# Курсы / группы
+RewriteRule ^courses\.html$ /courses.php [R=301,L]
+RewriteRule ^courses-page\.html$ /courses.php [R=301,L]
+RewriteRule ^groups\.html$ /courses.php [R=301,L]
+RewriteRule ^group-profile\.html$ /courses.php [R=301,L]
+
+# События
+RewriteRule ^events\.html$ /events.php [R=301,L]
+RewriteRule ^event\.html$ /events.php [R=301,L]
+
+# Преподаватели / портфолио / фрилансеры
+RewriteRule ^members\.html$ /members/ [R=301,L]
+RewriteRule ^members-page\.html$ /members/ [R=301,L]
+RewriteRule ^members-portfolio\.html$ /members/ [R=301,L]
+RewriteRule ^members-portfolio-single\.html$ /members/ [R=301,L]
+RewriteRule ^portfolio\.html$ /members/ [R=301,L]
+RewriteRule ^freelancers\.html$ /members/ [R=301,L]
+
+# Магазин (нет в бэкенде — на курсы)
+RewriteRule ^shop\.html$ /courses.php [R=301,L]
+RewriteRule ^product\.html$ /courses.php [R=301,L]
+
+# 404 — своя страница с шаблоном
+ErrorDocument 404 /404.php
