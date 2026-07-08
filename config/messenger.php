@@ -7,11 +7,11 @@ if (!defined('DOC_ROOT')) {
     define('DOC_ROOT', $_SERVER['DOCUMENT_ROOT'] ?? dirname(__DIR__));
 }
 
-// Часы, в течение которых после последнего сообщения пользователя окно считается открытым
-define('MESSENGER_WINDOW_HOURS', (int) (getenv('MESSENGER_WINDOW_HOURS') ?: 24));
+if (!function_exists('env')) {
+    require_once __DIR__ . '/env.php';
+    load_dotenv(dirname(__DIR__));
+}
 
-// Для webhook Facebook: verify token (укажите свой в настройках приложения Meta)
-define('MESSENGER_VERIFY_TOKEN', getenv('MESSENGER_VERIFY_TOKEN') ?: '');
-
-// Page Access Token для отправки сообщений и опционально для Graph API (conversation sync)
-define('MESSENGER_PAGE_ACCESS_TOKEN', getenv('MESSENGER_PAGE_ACCESS_TOKEN') ?: '');
+define('MESSENGER_WINDOW_HOURS', (int) env('MESSENGER_WINDOW_HOURS', 24));
+define('MESSENGER_VERIFY_TOKEN', (string) env('MESSENGER_VERIFY_TOKEN', ''));
+define('MESSENGER_PAGE_ACCESS_TOKEN', (string) env('MESSENGER_PAGE_ACCESS_TOKEN', ''));
